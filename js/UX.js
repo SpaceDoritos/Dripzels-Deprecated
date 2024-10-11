@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const popupSection = document.getElementById('section-Popup');
   const closeButton = document.querySelectorAll('[data-close-button]');
 
+  // Check 01
+  
   function openPopup(menu) {
     menu = document.querySelector(`.Popup-${menu}`);
     menu.classList.add('visible');
