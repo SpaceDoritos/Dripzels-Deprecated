@@ -123,6 +123,8 @@ export function initScene() {
           function (texture) {
             texture.flipY = false;
             texture.colorSpace = SRGBColorSpace;
+            texture.minFilter = THREE.LinearMipMapLinearFilter;
+            texture.magFilter = THREE.NearestFilter;
             texture.needsUpdate = true;
           }
         );
@@ -158,6 +160,8 @@ export function initScene() {
           function (texture) {
             texture.flipY = false;
             texture.colorSpace = SRGBColorSpace;
+            texture.minFilter = THREE.NearestFilter;
+            texture.magFilter = THREE.NearestFilter;
             texture.needsUpdate = true;
           }
         );
@@ -194,6 +198,8 @@ export function initScene() {
           function (texture) {
             texture.flipY = false;
             texture.colorSpace = SRGBColorSpace;
+            texture.minFilter = THREE.NearestFilter;
+            texture.magFilter = THREE.NearestFilter;
             texture.needsUpdate = true;
           }
         );
@@ -229,6 +235,8 @@ export function initScene() {
           function (texture) {
             texture.flipY = false;
             texture.colorSpace = SRGBColorSpace;
+            texture.minFilter = THREE.NearestFilter;
+            texture.magFilter = THREE.NearestFilter;
             texture.needsUpdate = true;
           }
         );
@@ -270,12 +278,12 @@ export function initScene() {
       camera.updateProjectionMatrix();
       renderer.setSize(container.clientWidth, container.clientHeight);
     });
-    // document.getElementById('bannerClose').addEventListener("click", function () {
-    //   // Resize window
-    //   camera.aspect = container.clientWidth / container.clientHeight;
-    //   camera.updateProjectionMatrix();
-    //   renderer.setSize(container.clientWidth, container.clientHeight);
-    // });
+    document.getElementById('bannerClose').addEventListener("click", function () {
+      // Resize window
+      camera.aspect = container.clientWidth / container.clientHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(container.clientWidth, container.clientHeight);
+    });
   } catch (error) {
     console.error(error); // Log the error to the console
     sendError(`Error while building the scene: <br> ${error}`)

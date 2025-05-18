@@ -147,6 +147,8 @@ function changeClothing(type, clothing) {
   const texture = textureLoader.load(clothing.src, function (texture) {
     texture.flipY = false;
     texture.colorSpace = THREE.SRGBColorSpace;
+    texture.minFilter = THREE.LinearMipMapLinearFilter;
+    texture.magFilter = THREE.NearestFilter;
     texture.needsUpdate = true;
   });
   switch (type) {
