@@ -148,7 +148,7 @@ function changeClothing(type, clothing) {
     texture.flipY = false;
     texture.colorSpace = THREE.SRGBColorSpace;
     texture.minFilter = THREE.LinearMipMapLinearFilter;
-    texture.magFilter = THREE.NearestFilter;
+    texture.magFilter = THREE.LinearMipMapLinearFilter;
     texture.needsUpdate = true;
   });
   switch (type) {

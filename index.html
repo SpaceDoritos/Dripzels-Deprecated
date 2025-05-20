@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head data-version="2.5">
+    <head data-version="2.6">
         <!-- 📌 Canonical URL -->
         <link rel="canonical" href="https://dripzels.com/" />
 
@@ -56,11 +56,11 @@
     <body>
         <noscript style="color: white;">You need to enable JavaScript to run this app.</noscript>
 
-        <div id="messageBanner">
+        <!-- <div id="messageBanner">
             <small>Some people didn't like the latest update that made the textures pixelated. Please provide your feedback <a href="https://app.youform.com/forms/uk1dg4fu" target="_blank" style="text-decoration: underline;">here</a>. I'll rollack to a previous version if it gets enough votes.</small>
             <button id="bannerClose" onclick="document.getElementById('messageBanner').remove()"
              class="close-button" aria-label="Close"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg></button>
-        </div>
+        </div> -->
 
         <style>
             #messageBanner{
@@ -113,7 +113,7 @@
                             <h3><span class="titleColor">Drip</span>zels</h3> <p>v<span data-version-display>1.0</span></p>
                         </div>
                         <p>Made with ♥ by <a href="https://x.com/SpaceDoritoes" target="_blank">SpaceDorito</a></p>
-                        <p>Last Updated: 18 May 2025</p>
+                        <p>Last Updated: 20 May 2025</p>
                     </div>
                     <hr>
                     <h1><u>Update Log</u></h1>
@@ -121,20 +121,31 @@
                         <div>
                             <h2>This Update:</h2>
                             <p>
-                                - Tiny update: Fixed the textures being blurry on the dummy. Clothing should seem pixelated now. 🔧
+                                - Feature Rollback: Rolled back to using Linear texture interpolation. 
                                 <br>
                             </p>
+                            <br>
 
-                            <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
-                                <div style="width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                                    <img src="images/before.png" alt="Version 2.5" style="width: 100%; aspect-ratio: 1/1;">
-                                    <small>Version 2.1</small>
-                                </div>
-                                <div style="width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                                    <img src="images/after.png" alt="Version 2.5" style="width: 100%; aspect-ratio: 1/1;">
-                                    <small>Version 2.5</small>
-                                </div>
-                            </div>
+                            <p>
+                                Thank you for your valuable feedback! I initially made Dripzels because I didn't like that ingame.clothing uses a light theme lol. I just wanted to make a more user friendly website while practicing my programming skills, but it has grown to be helpful to many clothing designers, so every feedback counts.
+                            </p>
+                            <br>
+                            <p>I have read every feedback suggestions and I'll be adding most of it in Dripzels 3.0 update. Some of the suggestions I like and will prossibly add: </p>
+                            <ul>
+                                <li>Advanced clothing template to Roblox standard template converter</li>
+                                <li>More Robux Calculator Options.</li>
+                                <li>Option to hide each individual part of the humanoid</li>
+                                <li>Will be switching to only R15 humanoids. Adding R6 is more time consuming and the preview is not as accurate either for it. I'll try adding some R6 humanoids after the initial 3.0 update but no promises.</li>
+                                <li>More 2D Preview Styles.</li>
+                                <li>"The ability to add on accessories onto the model via a link" by Chaos. I like this idea! Sadly, Roblox has a rate limit to their API now so I cannot add this. I will however add a feature to change the humanoid's face.</li>
+                                <li>A toggle to switch between Linear (Blurry but Roblox accurate) and Closest (Pixelated) interpolation.</li>
+                                <li>Will add a drag and drop feature and a donation page, thank you OOX1R. The first few donations will go towards owning the domain for the next few years 💜</li>
+                                <li>Regarding skin tones, this feature has been requested for a while now, but my old code was very messy so I didn't feel like going through it. Since I'm rewriting everything I'll try to add this.</li>
+                                <li>Poses for rigs? Very less likely but I'll give it a try.</li>
+                            </ul>
+                            <p>This might take a few months to finish since I want the update to be polished. If you would life to give more feedback you may do so <a href="https://app.youform.com/forms/uk1dg4fu" target="_blank">here</a></p>
+                            
+                            
                         </div>
                         <div>
                             <h2>Upcoming Updates:</h2>
@@ -177,7 +188,7 @@
                                 <div class="homeTitle">
                                     <h3><span class="titleColor">Drip</span>zels</h3> <p>v<span data-version-display>1.0</span></p>
                                 </div>
-                                <p>Made with ♥ by <a href="spacedorito.xyz" target="_blank">SpaceDorito</a></p>
+                                <p>Made with ♥ by <a href="https://x.com/SpaceDoritoes" target="_blank">SpaceDorito</a></p>
                             </div>
                             <hr>
                             <div class="homeRelatedButtons">
